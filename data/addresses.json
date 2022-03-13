@@ -1,0 +1,13 @@
+{
+    "dex_address": "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin",
+    "market_addresses": {
+        "SOL/USDC": "9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT"
+    },
+    "account_info": {
+        "name": "test_twap_account",
+        "address": "HVmWEFrPfuhjTQ4BYK4fDbHdNVZkgaoBS16rd5QDykyh",
+        "spl-accounts": {
+            "USDC": "DdJY8mvrYtjzScQFYEwEW2LLvQEygtZXNAebkncLnDqX"
+        }
+    }
+}
