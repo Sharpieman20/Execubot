@@ -11,13 +11,14 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "build": "lerna run build",
-    "lint": "eslint 'packages/*/{src,test}/**/*.ts' && prettier -c 'packages/*/{src,test}/**/*.ts'",
-    "lint:fix": "eslint --fix 'packages/*/{src,test}/**/*.ts' && prettier --write 'packages/*/{src,test}/**/*.ts'",
-    "deploy": "run-s deploy:docs build deploy:apps && gh-pages -d docs",
-    "deploy:docs": "lerna run docs",
-    "deploy:apps": "lerna run deploy:app",
-    "test": "lerna run test --concurrency 1 --stream"
+    "build": "tsc",
+    "start": "tsc --watch",
+    "clean": "rm -rf lib",
+    "shell": "node -e \"$(< shell)\" -i --experimental-repl-await",
+    "test:build": "run-s build",
+    "test:lint": "eslint src",
+    "test:unit": "jest",
+    "test:watch": "jest --watch"
   },
   "lint-staged": {
     "packages/*/{src,test}/**/*.ts": [
@@ -43,6 +44,8 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
+    "@project-serum/borsh": "^0.2.5",
+    "@project-serum/serum": "^0.13.61",
     "@types/jest": "^26.0.15",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
