@@ -8,7 +8,7 @@ yarn install
 ```
 
 ## Generating Local Keypair
-Phanton -> Export Private Key
+Phantom -> Export Private Key
 ```
 python3
 import base58
