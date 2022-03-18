@@ -1,28 +1,13 @@
-# TradingStrats
-Repo for Friktion's on-chain trading strategies
+# Execubot
 
-# Setup
+This is the main repository for my submission to Solana's Riptide Hackathon.
 
-```
-yarn install
-```
+The code for the TWAP bot lives in this repo, and more information on testing and usage can be found in BOT.md.
 
-## Generating Local Keypair
-Phantom -> Export Private Key
-```
-python3
-import base58
-bytes_array = base58.b58decode("ENTER PRIVATE KEY HERE")
-json_string = "[" + ",".join(map(lambda b: str(b), byte_array)) + "]"
-print(json_string)
-```
-Paste output into 
-```
-~/.config/solana/twap_authority.json
-```
+The other main component of my project is research into improving execution using this bot.
 
-# Example
+I've written Medium articles here with my findings:
+Quantifying Price Impact - <link>
+Analyzing Techniques for Improving Execution Performance - <link>
 
-```
-ts-node src/scratch.ts
-```
+The code used to produce these results is also available upon request.
