@@ -249,9 +249,9 @@ async function doTwap(twapOrder: TwapOrder) {
 
 async function main() {
 
-    let minutesToTwap = 1.5;
-    let ordersToPlace = 3;
-    let sizeToPlace = 0.01;
+    let minutesToTwap = 15;
+    let ordersToPlace = 100;
+    let sizeToPlace = 100;
 
     let startDate = new Date();
     let endDate = new Date(startDate.getTime() + minutesToTwap*60000);
