@@ -2,7 +2,7 @@
 
 This is the main repository for my submission to Solana's Riptide Hackathon.\
 \
-The code for the TWAP bot lives in this repo, and more information on testing and usage can be found in BOT.md.\
+The code for the Serum Twap bot lives in this repo, and more information on testing and usage can be found in [BOT.md](BOT.md).\
 \
 The other main component of my project is research into improving execution using this bot.\
 \
